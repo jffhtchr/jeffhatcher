@@ -1,0 +1,354 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    background-color: black;
+}
+
+
+#wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width:100vw;
+    min-height: 100vh;
+}
+
+/* ---------- NAME CONTAINER ---------- */
+#name-container{
+    width: 100vw;
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: 50px;
+    animation-duration: 3s;
+    padding-top:50px;  
+    padding-left:50px; 
+    margin-bottom:.5vh;
+}
+
+#logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#cursor{
+    visibility: visible
+}
+
+#name h1{
+    color:whitesmoke;
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 8em;
+    font-weight: 400;
+}
+
+#descriptors{
+    font-family:'Ubuntu Condensed', sans-serif;
+    font-size: 3em;
+    color:gray;
+    padding-left:35px;
+}
+
+#descriptors a{
+    color:inherit;
+    text-decoration: none;
+}
+
+#hover-one:hover{
+    color:tomato;
+}
+
+#hover-two:hover{
+    color:royalblue;
+}
+
+#hover-three:hover{
+    color:orange;
+}
+
+/* ------------------ PROJECTS CONTAINER ------------------ */
+
+#projects-container{
+    background-color: whitesmoke;
+    width: 100vw;
+    height:0;
+    transition: height 1s;
+    display: flex;
+    flex-direction: row;
+}
+
+
+#projects{
+    width: 100vw;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    background-color: whitesmoke;
+    overflow-x: auto;
+    flex-direction: row;
+    -webkit-overflow-scrolling: touch;
+}
+
+.dev{
+    height:90%;
+    width:30%;
+    flex: 0 0 auto;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: whitesmoke;
+    font-size: 2em;
+    font-family:'Ubuntu Condensed', sans-serif;
+    margin:5px;
+}
+
+#projectLink{
+    height:100%;
+    width:100%;
+    background-color: transparent;
+    color:inherit;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.dev:hover{
+    height:95%;
+    width:33%;
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: tomato;
+}
+
+#dev-one{
+    background-image: url("./imgs/frankBW.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+#dev-one:hover{
+    background-image: url("./imgs/frank.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#dev-two{
+    background-image: url("./imgs/bubblesBW.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+#dev-two:hover{
+    background-image: url("./imgs/bubbles.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    color:white;
+}
+
+#dev-three{
+    background-image: url("./imgs/chairsBW.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+#dev-three:hover{
+    background-image: url("./imgs/chairs.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    color:blue;
+}
+
+
+#dev-four{
+    background-image: url("./imgs/jeffDrumBW.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+#dev-four:hover{
+    background-image: url("./imgs/jeffDrum.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+}
+
+#dev-five{
+    background-image: url("./imgs/flexbox_laptopBW.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+
+
+#dev-five:hover{
+    background-image: url("./imgs/flexbox_laptop.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    color:white;
+}
+
+/* ------------------ JEFF CONTAINER ------------------ */
+.jeff-container{
+    margin-top:40vh;
+    height:40vh;
+    width:40vh;
+    z-index:500;
+    position: absolute;
+    margin-left:-40vh;
+    background-image: url("./imgs/jeffFace.png");
+    background-position: left;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+
+.jeff-container.horizRight {
+    -webkit-transition: 3s;
+    -moz-transition: 3s;
+    -ms-transition: 3s;
+    -o-transition: 3s;
+    transition: 3s;
+    margin-left:0 !important;
+} 
+
+.jeff-container.horizLeft{
+    -webkit-transition: 1.5s;
+    -moz-transition: 1.5s;
+    -ms-transition: 1.5s;
+    -o-transition: 1.5s;
+    transition: 1.5s;
+    margin-left:-40vh !important;
+} 
+
+/* ------------------ TEXT CONTAINER ------------------ */
+
+#text-container{
+    width: 100vw;
+    display: flex;
+    justify-content: flex-end;
+    color:whitesmoke;
+    background-color: black;
+    animation-delay: 2.5s;
+    animation-duration: 3s;
+    padding-top:75px;
+    padding-right:50px;
+    flex:2;
+}
+
+#hello{
+    width:50%;
+    font-size: 2em;
+    font-family:'Ubuntu Condensed', sans-serif;
+}
+
+
+#reveal{
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-color: orange;
+    -webkit-text-decoration-color: orange;
+}
+
+#reveal:hover{
+    color:gray;
+}
+
+#jeff{
+    color:tomato;
+    cursor: pointer;
+}
+
+#together{
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-color: royalblue;
+    -webkit-text-decoration-color: royalblue;
+
+}
+
+#together:hover{
+    color:gray;
+}
+
+#hello a{
+    color:inherit;
+    text-decoration: none;
+}
+
+/* ---------- FOOTER ---------- */
+#footer{
+    display: flex;
+    justify-content: center;
+    bottom:0;
+    padding-top: 50px;
+    padding-bottom:15px;
+    animation-delay: .5s;
+    animation-duration: 3s;
+}
+
+/* ---------- MEDIA QUERIES ---------- */
+
+@media (max-width: 800px){
+    #name-container {
+        padding:6vw;
+    }
+
+    #logo{
+        justify-content: flex-start;
+        align-items:flex-start;
+     } 
+
+    #name h1{
+        font-size:16vw;
+    }
+    
+    #descriptors{
+        font-size:6vw;
+        padding-left:12.3%;
+    } 
+
+    /* --------------- TEXT CONTAINER --------------- */
+
+    .dev{
+        font-size:4vw;
+    }
+
+    #text-container{
+        align-items: center;
+        padding:6vw;
+    }
+
+    #hello{
+        width:90%;
+        font-size: 2em;
+    }
+
+}
+ 
