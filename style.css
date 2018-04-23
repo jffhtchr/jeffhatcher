@@ -46,13 +46,13 @@
 #name h1{
     color:whitesmoke;
     font-family: 'Yantramanav', sans-serif;
-    font-size: 8em;
+    font-size:8vw;
     font-weight: 400;
 }
 
 #descriptors{
     font-family:'Ubuntu Condensed', sans-serif;
-    font-size: 3em;
+    font-size:3vw;
     color:gray;
     padding-left:35px;
 }
@@ -107,7 +107,7 @@
     justify-content: center;
     text-align: center;
     background-color: whitesmoke;
-    font-size: 2em;
+    font-size:2.3vw;
     font-family:'Ubuntu Condensed', sans-serif;
     margin:5px;
 }
@@ -253,18 +253,20 @@
     width: 100vw;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     color:whitesmoke;
     background-color: black;
     animation-delay: 2.5s;
     animation-duration: 3s;
-    padding-top:75px;
+    padding-bottom:75px;
     padding-right:50px;
     flex:2;
+    transition: padding-top 2s;
 }
 
 #hello{
     width:50%;
-    font-size: 2em;
+    font-size:3vw;
     font-family:'Ubuntu Condensed', sans-serif;
 }
 
@@ -304,13 +306,19 @@
 
 /* ---------- FOOTER ---------- */
 #footer{
+    color:2px solid saddlebrown;
     display: flex;
     justify-content: center;
     bottom:0;
     padding-top: 50px;
-    padding-bottom:15px;
+    padding-bottom:2vh;
     animation-delay: .5s;
     animation-duration: 3s;
+}
+
+#icons img{
+   min-height:50px; 
+   max-height:8vh;
 }
 
 /* ---------- MEDIA QUERIES ---------- */
@@ -350,5 +358,8 @@
         font-size: 2em;
     }
 
+    #footer{
+        padding-bottom:15px;
+    }
+
 }
- 
