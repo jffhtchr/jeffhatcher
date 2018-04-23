@@ -37,3 +37,11 @@ window.onclick = function(evt){
 }
 
 
+window.ontouchstart = function(evt){
+    if(open && evt.srcElement.id !== "reveal" && evt.srcElement.id !== "projects-container"){
+        projectsContainer.style.height = "0vh";
+        textContainer.style.paddingTop = "0px";
+        open = !open;
+    }
+}
+
