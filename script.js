@@ -31,7 +31,6 @@ jeff.onclick = function(evt){
 const projects = [ "projects-container", "projects", "projectLink", "reveal"]
 
 window.onclick = function(evt){
-    console.log("DESKTOP", evt)
     if(open && !projects.includes(evt.srcElement.id)){
         projectsContainer.style.height = "0vh";
         textContainer.style.paddingTop = "0px";
@@ -40,7 +39,6 @@ window.onclick = function(evt){
 }
 
 document.ontouchstart = function(evt){
-    console.log('MOBILE' ,evt)
     if(open && !projects.includes(evt.srcElement.id)){
         projectsContainer.style.height = "0vh";
         textContainer.style.paddingTop = "0px";
