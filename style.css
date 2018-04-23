@@ -280,7 +280,7 @@
     align-items: center;
     color:whitesmoke;
     background-color: black;
-    animation-delay: 2.5s;
+    animation-delay: 1s;
     animation-duration: 3s;
     padding-bottom:75px;
     padding-right:50px;
@@ -390,4 +390,18 @@
         padding-bottom:15px;
     }
 
+}
+
+@media (max-width:430px){
+    #hover-one:hover{
+        color:inherit;
+    }
+    
+    #hover-two:hover{
+        color:inherit;
+    }
+    
+    #hover-three:hover{
+        color:inherit;
+    }
 }
