@@ -28,7 +28,7 @@ jeff.onclick = function(evt){
     },5000);
 }
 
-document.onclick = function(evt){
+window.onclick = function(evt){
     if(open && evt.srcElement.id !== "reveal" && evt.srcElement.id !== "projects-container"){
         projectsContainer.style.height = "0vh";
         textContainer.style.paddingTop = "0px";
