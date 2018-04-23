@@ -28,7 +28,7 @@ jeff.onclick = function(evt){
     },5000);
 }
 
-const projects = [ "projects-container", "projects", "projectLink", "reveal"]
+const projects = [ "projects-container", "projects", "projectLink"]
 
 window.onclick = function(evt){
     if(open && !projects.includes(evt.srcElement.id)){
