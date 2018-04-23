@@ -28,17 +28,18 @@ jeff.onclick = function(evt){
     },5000);
 }
 
+const projects = [ "projects-container", "projects", "projectLink", "reveal"]
+
 window.onclick = function(evt){
-    if(open && evt.srcElement.id !== "reveal" && evt.srcElement.id !== "projects-container"){
+    if(open && !projects.includes(evt.srcElement.id)){
         projectsContainer.style.height = "0vh";
         textContainer.style.paddingTop = "0px";
         open = !open;
     }
 }
 
-
 document.ontouchstart = function(evt){
-    if(open && evt.srcElement.id !== "reveal" && evt.srcElement.id !== "projects-container"){
+    if(open && !projects.includes(evt.srcElement.id)){
         projectsContainer.style.height = "0vh";
         textContainer.style.paddingTop = "0px";
         open = !open;
