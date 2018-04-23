@@ -28,6 +28,15 @@ jeff.onclick = function(evt){
     },5000);
 }
 
+jeff.ontouchstart= function(evt){
+    jeffContainer.classList.remove('horizLeft');
+    jeffContainer.classList.add('horizRight');
+    setTimeout(function(){
+        jeffContainer.classList.add('horizLeft');
+        jeffContainer.classList.remove('horizRight');
+    },5000);
+}
+
 const projects = [ "projects-container", "projects", "projectLink", "reveal"]
 
 window.onclick = function(evt){
