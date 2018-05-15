@@ -1,7 +1,7 @@
 *{
     box-sizing: border-box;
     margin: 0;
-    background-color: black;
+    background-color: #101010;
 }
 
 
@@ -104,16 +104,36 @@
 
 .dev{
     height:90%;
-    width:30%;
+    width:400px;
     flex: 0 0 auto;
     display:flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     background-color: whitesmoke;
-    font-size:2.3vw;
+    font-size:35px;
     font-family:'Ubuntu Condensed', sans-serif;
-    margin:5px;
+    color:transparent;
+}
+
+.dev span{
+    color:transparent;
+    background-color: transparent;
+}
+
+.dev:hover{
+    height:95%;
+    width:440px;
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: tomato;
+}
+
+.dev:hover span{
+    background-color: transparent;
+    color:white;
+    font-size: 100%;
+    width:50%;
 }
 
 #projectLink{
@@ -127,17 +147,8 @@
     justify-content: center;
 }
 
-
-.dev:hover{
-    height:95%;
-    width:33%;
-    color: white;
-    text-decoration: underline;
-    text-decoration-color: tomato;
-}
-
 #dev-one{
-    background-image: url("./imgs/frankBW.png");
+    background-image: url("./imgs/Jeff_Icons-Frankenstyle.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -149,14 +160,10 @@
     -o-transition:all .3s;
 }
 
-#dev-one:hover{
-    background-image: url("./imgs/frank.png");
-    background-repeat: no-repeat;
-    background-position: center;
-}
+
 
 #dev-two{
-    background-image: url("./imgs/bubblesBW.png");
+    background-image: url("./imgs/Jeff_Icons-Thought.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -168,15 +175,9 @@
     -o-transition:all .3s;
 }
 
-#dev-two:hover{
-    background-image: url("./imgs/bubbles.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    color:white;
-}
 
 #dev-three{
-    background-image: url("./imgs/chairsBW.png");
+    background-image: url("./imgs/Jeff_Icons-Music.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -188,16 +189,12 @@
     -o-transition:all .3s;
 }
 
-#dev-three:hover{
-    background-image: url("./imgs/chairs.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    color:blue;
-}
+
 
 
 #dev-four{
-    background-image: url("./imgs/jeffDrumBW.png");
+    /* background-image: url("./imgs/jeffDrumBW.png"); */
+    background-image: url("./imgs/Jeff_Icons-Dinner.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -209,15 +206,9 @@
     -o-transition:all .3s;
 }
 
-#dev-four:hover{
-    background-image: url("./imgs/jeffDrum.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    color: white;
-}
 
 #dev-five{
-    background-image: url("./imgs/flexbox_laptopBW.png");
+    background-image: url("./imgs/Jeff_Icons-HTML-Laptop.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -229,14 +220,6 @@
     -o-transition:all .3s;
 }
 
-
-
-#dev-five:hover{
-    background-image: url("./imgs/flexbox_laptop.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    color:white;
-}
 
 /* ------------------ JEFF CONTAINER ------------------ */
 .jeff-container{
@@ -251,18 +234,21 @@
     background-size:contain;
     background-repeat: no-repeat;
     background-color: transparent;
+    animation-duration: .5s;
 }
 
 .jeff-container.horizRight {
-    -webkit-transition: 3s;
-    -moz-transition: 3s;
-    -ms-transition: 3s;
-    -o-transition: 3s;
-    transition: 3s;
+    animation-duration: 1.7s;
+    -webkit-transition: 1.7s;
+    -moz-transition: 1.7s;
+    -ms-transition: 1.7s;
+    -o-transition: 1.7s;
+    transition: 1.7s;
     margin-left:0 !important;
 } 
 
 .jeff-container.horizLeft{
+    animation-duration: 1.5s;
     -webkit-transition: 1.5s;
     -moz-transition: 1.5s;
     -ms-transition: 1.5s;
@@ -279,7 +265,7 @@
     justify-content: flex-end;
     align-items: center;
     color:whitesmoke;
-    background-color: black;
+    background-color: #101010;
     animation-delay: 1s;
     animation-duration: 3s;
     padding-bottom:75px;
@@ -311,8 +297,10 @@
 }
 
 #jeff{
-    color:tomato;
     cursor: pointer;
+    text-decoration: underline;
+    text-decoration-color: tomato;
+    -webkit-text-decoration-color: tomato;
 }
 
 #together{
@@ -372,10 +360,6 @@
 
     /* --------------- TEXT CONTAINER --------------- */
 
-    .dev{
-        font-size:4vw;
-    }
-
     #text-container{
         align-items: center;
         padding:6vw;
@@ -393,6 +377,25 @@
 }
 
 @media (max-width:430px){
+    .dev {
+        width:200px;
+        margin:15px;
+    }
+    .dev:hover{
+        width:210px;
+    }
+    .dev span{
+        color:white;
+        font-size:90%;
+        width: 90%;
+    }
+
+    .dev:hover span{
+        color:white;
+        width: 93%;
+        font-size:92%;
+    }
+
     #hover-one:hover{
         color:inherit;
     }

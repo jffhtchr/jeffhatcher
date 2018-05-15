@@ -25,7 +25,7 @@ jeff.onclick = function(evt){
     setTimeout(function(){
         jeffContainer.classList.add('horizLeft');
         jeffContainer.classList.remove('horizRight');
-    },5000);
+    },2000);
 }
 
 const projects = [ "projects-container", "projects", "projectLink", "reveal"]
