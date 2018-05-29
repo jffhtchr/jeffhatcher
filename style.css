@@ -284,6 +284,16 @@
     font-family:'Ubuntu Condensed', sans-serif;
 }
 
+#jeff{
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-color: tomato;
+    -webkit-text-decoration-color: tomato;
+}
+
+#jeff:hover{
+    color:gray;
+}
 
 #reveal{
     cursor: pointer;
@@ -296,12 +306,6 @@
     color:gray;
 }
 
-#jeff{
-    cursor: pointer;
-    text-decoration: underline;
-    text-decoration-color: tomato;
-    -webkit-text-decoration-color: tomato;
-}
 
 #together{
     cursor: pointer;
