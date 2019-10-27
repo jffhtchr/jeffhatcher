@@ -20,11 +20,11 @@ reveal.onclick = function(){
 }
 
 jeff.onclick = function(){
-    jeffContainer.classList.remove('moveLeft');
-    jeffContainer.classList.add('moveRight');
+    jeffContainer.classList.remove('move-left');
+    jeffContainer.classList.add('move-right');
     setTimeout(function(){
-        jeffContainer.classList.add('moveLeft');
-        jeffContainer.classList.remove('moveRight');
+        jeffContainer.classList.add('move-left');
+        jeffContainer.classList.remove('move-right');
     },2000);
 }
 

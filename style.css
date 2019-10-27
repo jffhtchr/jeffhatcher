@@ -19,59 +19,55 @@
     min-height: 100vh;
 }
 
-/* ---------- NAME CONTAINER ---------- */
-.name-container {
+/* ---------- LOGO ---------- */
+.logo-container {
     width: 100vw;
     display: flex;
     justify-content: flex-start;
-    padding-bottom: 50px;
     animation-duration: 3s;
-    padding-top: 50px;  
-    padding-left: 50px; 
-    margin-bottom: .5vh;
+    padding: 50px 50px 0;  
 }
 
-.name__logo{
+.logo__logo{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    /* align-items: center; */
 }
 
-.name__cursor {
+.logo__cursor {
     visibility: visible
 }
 
-.name__name {
+.logo__header {
     color:whitesmoke;
     font-family: 'Yantramanav', sans-serif;
-    font-size:8vw;
+    font-size:90px;
     font-weight: 400;
     margin-left: 75px;
 }
 
-.name__name:before {
+.logo__header:before {
     position: absolute;
     content: ">";
     left: 50px;
 }
 
-.name__descriptors {
+.logo__subtitle {
     font-family:'Ubuntu Condensed', sans-serif;
-    font-size: 3vw;
+    font-size: 40px;
     color:gray;
     margin-left: 75px;
 }
 
-.name__descriptors a{
+.logo__subtitle a{
     text-decoration: none;
 }
 
-.name__drummer {
+.logo__drummer {
     color: transparent;
 }
 
-.name__drummer:hover {
+.logo__drummer:hover {
     color: orange;
 }
 
@@ -83,11 +79,12 @@
     color:royalblue;
 }
 
-/* ------------------ PROJECTS CONTAINER ------------------ */
+/* ------------------ PROJECTS ------------------ */
 .projects-container {
     background-color: whitesmoke;
     width: 100vw;
     height: 0;
+    margin-top: 50px;
     transition: height 1s;
     -webkit-transition: height 1s;
     -moz-transition: height 1s;
@@ -96,7 +93,6 @@
     display: flex;
     flex-direction: row;
 }
-
 
 .projects {
     width: 100vw;
@@ -153,27 +149,27 @@
     width: 50%;
 }
 
-.project--one {
+.project--frank {
     background-image: url("./imgs/Jeff_Icons-Frankenstyle.png");
 }
 
-.project--two {
+.project--bubbles {
     background-image: url("./imgs/Jeff_Icons-Thought.png");
 }
 
-.project--three {
+.project--music {
     background-image: url("./imgs/Jeff_Icons-Music.png");
 }
 
-.project--four {
+.project--drama {
     background-image: url("./imgs/Jeff_Icons-Dinner.png");
 }
 
-.project--five {
+.project--laptop {
     background-image: url("./imgs/Jeff_Icons-HTML-Laptop.png");
 }
 
-.project--link {
+.project__link {
     height: 100%;
     width: 100%;
     background-color: transparent;
@@ -184,8 +180,7 @@
     justify-content: center;
 }
 
-
-/* ------------------ JEFF CONTAINER ------------------ */
+/* ------------------ JEFF'S FACE ------------------ */
 .jeff-container {
     margin-top: 40vh;
     height: 40vh;
@@ -201,7 +196,7 @@
     animation-duration: .5s;
 }
 
-.moveRight {
+.move-right {
     animation-duration: 1.7s;
     -webkit-transition: 1.7s;
     -moz-transition: 1.7s;
@@ -210,7 +205,7 @@
     transition: 1.7s;
     margin-left: 0 !important;
 } 
-.moveLeft {
+.move-left {
     animation-duration: 1.5s;
     -webkit-transition: 1.5s;
     -moz-transition: 1.5s;
@@ -220,7 +215,7 @@
     margin-left: -40vh !important;
 } 
 
-/* ------------------ TEXT CONTAINER ------------------ */
+/* ------------------ TEXT ------------------ */
 .text-container {
     width: 100vw;
     display: flex;
@@ -230,8 +225,7 @@
     background-color: #101010;
     animation-delay: 1s;
     animation-duration: 3s;
-    padding-bottom: 75px;
-    padding-right: 50px;
+    padding: 50px;
     flex:2;
     transition: padding-top 2s;
     -webkit-transition: padding-top 2s;
@@ -242,7 +236,7 @@
 
 .text--copy {
     width: 50%;
-    font-size: 3vw;
+    font-size: 40px;
     font-family: 'Ubuntu Condensed', sans-serif;
 }
 
@@ -303,33 +297,68 @@
 
 /* ---------- MEDIA QUERIES ---------- */
 @media (max-width: 800px) {
-    .name-container {
-        padding: 6vw;
-    }
-
-    .name__logo {
-        justify-content: flex-start;
-        align-items: flex-start;
-     } 
-
-    .name__names {
-        font-size: 16vw;
+    .projects-container {
+        margin-top: 0;
     }
     
-    .name__descriptors {
-        font-size: 6vw;
-        padding-left: 12.3%;
-    } 
-
-    /* --------------- TEXT CONTAINER --------------- */
-    .text-container {
-        align-items: center;
-        padding: 6vw;
+    .logo-container {
+        padding: 15px;
     }
 
-    .text__hello {
-        width: 90%;
-        font-size: 2em;
+    .logo__logo {
+        justify-content: flex-start;
+        align-items: flex-start;
+    } 
+
+    .logo__header {
+        font-size: 70px;
+        margin-left: 60px;
+    }
+
+    .logo__header:before {
+        left: 30px;
+    }
+
+    .project {
+        width: 200px;
+    }
+
+    .project:hover {
+        width: 210px;
+    }
+
+    .project span {
+        padding: 0 15px;
+    }
+
+    .project:hover span {
+        background-color: transparent;
+        color: white;
+        font-size: 100%;
+        width: 100%;
+    }
+
+    .logo__subtitle {
+        font-size: 30px;
+        margin-left: 60px;
+    }
+
+    .project span {
+        color:white;
+        font-size: 20px;
+    }
+
+    .project:hover span{
+        font-size: 21px;
+    }
+    
+    .text-container {
+        padding: 0 75px;
+    }
+
+    .text--copy {
+        width: 100%;
+        font-size: 30px;
     }
 
     .footer__container {
@@ -349,25 +378,5 @@
 
     .project span {
         color:white;
-        font-size: 90%;
-        width: 90%;
-    }
-
-    .project:hover span{
-        color:white;
-        width: 93%;
-        font-size: 92%;
-    }
-
-    .project-one:hover {
-        color:inherit;
-    }
-    
-    .project-two:hover {
-        color:inherit;
-    }
-    
-    .project-three:hover {
-        color:inherit;
     }
 }
