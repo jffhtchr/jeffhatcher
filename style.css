@@ -1,96 +1,104 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     background-color: #101010;
 }
 
-
-#wrapper{
+.wrapper {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
 
-#content{
+.main-content {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width:100vw;
+    width: 100vw;
     min-height: 100vh;
 }
 
 /* ---------- NAME CONTAINER ---------- */
-#name-container{
+.name-container {
     width: 100vw;
     display: flex;
     justify-content: flex-start;
     padding-bottom: 50px;
     animation-duration: 3s;
-    padding-top:50px;  
-    padding-left:50px; 
-    margin-bottom:.5vh;
+    padding-top: 50px;  
+    padding-left: 50px; 
+    margin-bottom: .5vh;
 }
 
-#logo{
+.name__logo{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
+    /* align-items: center; */
 }
 
-#cursor{
+.name__cursor {
     visibility: visible
 }
 
-#name h1{
+.name__name {
     color:whitesmoke;
     font-family: 'Yantramanav', sans-serif;
     font-size:8vw;
     font-weight: 400;
+    margin-left: 75px;
 }
 
-#descriptors{
+.name__name:before {
+    position: absolute;
+    content: ">";
+    left: 50px;
+}
+
+.name__descriptors {
     font-family:'Ubuntu Condensed', sans-serif;
-    font-size:3vw;
+    font-size: 3vw;
     color:gray;
-    padding-left:34px;
+    margin-left: 75px;
 }
 
-#descriptors a{
-    color:inherit;
+.name__descriptors a{
     text-decoration: none;
 }
 
-#hover-one:hover{
+.name__drummer {
+    color: transparent;
+}
+
+.name__drummer:hover {
+    color: orange;
+}
+
+.project-one:hover {
     color:tomato;
 }
 
-#hover-two:hover{
+.project-two:hover{
     color:royalblue;
 }
 
-#hover-three:hover{
-    color:orange;
-}
-
 /* ------------------ PROJECTS CONTAINER ------------------ */
-
-#projects-container{
+.projects-container {
     background-color: whitesmoke;
     width: 100vw;
-    height:0;
+    height: 0;
     transition: height 1s;
-    -webkit-transition:height 1s;
-    -moz-transition:height 1s;
-    -ms-transition:height 1s;
-    -o-transition:height 1s;
+    -webkit-transition: height 1s;
+    -moz-transition: height 1s;
+    -ms-transition: height 1s;
+    -o-transition: height 1s;
     display: flex;
     flex-direction: row;
 }
 
 
-#projects{
+.projects {
     width: 100vw;
     height: inherit;
     display: flex;
@@ -101,314 +109,265 @@
     flex-direction: row;
     -webkit-overflow-scrolling: touch;
 }
-
-.dev{
-    height:90%;
-    width:400px;
+ 
+.project {
+    height: 90%;
+    width: 400px;
     flex: 0 0 auto;
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     background-color: whitesmoke;
-    font-size:35px;
-    font-family:'Ubuntu Condensed', sans-serif;
-    color:transparent;
+    font-size: 35px;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
 }
 
-.dev span{
-    color:transparent;
+.project span {
+    color: transparent;
     background-color: transparent;
 }
 
-.dev:hover{
-    height:95%;
-    width:440px;
+.project:hover {
+    height: 95%;
+    width: 440px;
     color: white;
     text-decoration: underline;
     text-decoration-color: tomato;
 }
 
-.dev:hover span{
+.project:hover span {
     background-color: transparent;
-    color:white;
+    color: white;
     font-size: 100%;
-    width:50%;
+    width: 50%;
 }
 
-#projectLink{
-    height:100%;
-    width:100%;
+.project--one {
+    background-image: url("./imgs/Jeff_Icons-Frankenstyle.png");
+}
+
+.project--two {
+    background-image: url("./imgs/Jeff_Icons-Thought.png");
+}
+
+.project--three {
+    background-image: url("./imgs/Jeff_Icons-Music.png");
+}
+
+.project--four {
+    background-image: url("./imgs/Jeff_Icons-Dinner.png");
+}
+
+.project--five {
+    background-image: url("./imgs/Jeff_Icons-HTML-Laptop.png");
+}
+
+.project--link {
+    height: 100%;
+    width: 100%;
     background-color: transparent;
-    color:inherit;
+    color: inherit;
     text-decoration: none;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-#dev-one{
-    background-image: url("./imgs/Jeff_Icons-Frankenstyle.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    cursor: pointer;
-    transition: all .3s;
-    -webkit-transition:all .3s;
-    -moz-transition:all .3s;
-    -ms-transition:all .3s;
-    -o-transition:all .3s;
-}
-
-
-
-#dev-two{
-    background-image: url("./imgs/Jeff_Icons-Thought.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    cursor: pointer;
-    transition: all .3s;
-    -webkit-transition:all .3s;
-    -moz-transition:all .3s;
-    -ms-transition:all .3s;
-    -o-transition:all .3s;
-}
-
-
-#dev-three{
-    background-image: url("./imgs/Jeff_Icons-Music.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    cursor: pointer;
-    transition: all .3s;
-    -webkit-transition:all .3s;
-    -moz-transition:all .3s;
-    -ms-transition:all .3s;
-    -o-transition:all .3s;
-}
-
-
-
-
-#dev-four{
-    /* background-image: url("./imgs/jeffDrumBW.png"); */
-    background-image: url("./imgs/Jeff_Icons-Dinner.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    cursor: pointer;
-    transition: all .3s;
-    -webkit-transition:all .3s;
-    -moz-transition:all .3s;
-    -ms-transition:all .3s;
-    -o-transition:all .3s;
-}
-
-
-#dev-five{
-    background-image: url("./imgs/Jeff_Icons-HTML-Laptop.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    cursor: pointer;
-    transition: all .3s;
-    -webkit-transition:all .3s;
-    -moz-transition:all .3s;
-    -ms-transition:all .3s;
-    -o-transition:all .3s;
-}
-
 
 /* ------------------ JEFF CONTAINER ------------------ */
-.jeff-container{
-    margin-top:40vh;
-    height:40vh;
-    width:40vh;
-    z-index:500;
+.jeff-container {
+    margin-top: 40vh;
+    height: 40vh;
+    width: 40vh;
+    z-index: 500;
     position: absolute;
     margin-left:-40vh;
     background-image: url("./imgs/jeffFace.png");
     background-position: left;
-    background-size:contain;
+    background-size: contain;
     background-repeat: no-repeat;
     background-color: transparent;
     animation-duration: .5s;
 }
 
-.jeff-container.horizRight {
+.moveRight {
     animation-duration: 1.7s;
     -webkit-transition: 1.7s;
     -moz-transition: 1.7s;
     -ms-transition: 1.7s;
     -o-transition: 1.7s;
     transition: 1.7s;
-    margin-left:0 !important;
+    margin-left: 0 !important;
 } 
-
-.jeff-container.horizLeft{
+.moveLeft {
     animation-duration: 1.5s;
     -webkit-transition: 1.5s;
     -moz-transition: 1.5s;
     -ms-transition: 1.5s;
     -o-transition: 1.5s;
     transition: 1.5s;
-    margin-left:-40vh !important;
+    margin-left: -40vh !important;
 } 
 
 /* ------------------ TEXT CONTAINER ------------------ */
-
-#text-container{
+.text-container {
     width: 100vw;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    color:whitesmoke;
+    color: whitesmoke;
     background-color: #101010;
     animation-delay: 1s;
     animation-duration: 3s;
-    padding-bottom:75px;
-    padding-right:50px;
+    padding-bottom: 75px;
+    padding-right: 50px;
     flex:2;
     transition: padding-top 2s;
-    -webkit-transition:padding-top 2s;
-    -moz-transition:padding-top 2s;
-    -ms-transition:padding-top 2s;
-    -o-transition:padding-top 2s;
+    -webkit-transition: padding-top 2s;
+    -moz-transition: padding-top 2s;
+    -ms-transition: padding-top 2s;
+    -o-transition: padding-top 2s;
 }
 
-#hello{
-    width:50%;
-    font-size:3vw;
-    font-family:'Ubuntu Condensed', sans-serif;
+.text--copy {
+    width: 50%;
+    font-size: 3vw;
+    font-family: 'Ubuntu Condensed', sans-serif;
 }
 
-#jeff{
+.text--jeff {
     cursor: pointer;
     text-decoration: underline;
     text-decoration-color: tomato;
     -webkit-text-decoration-color: tomato;
 }
 
-#jeff:hover{
-    color:gray;
+.text--jeff:hover {
+    color: gray;
 }
 
-#reveal{
+.text--reveal {
     cursor: pointer;
     text-decoration: underline;
     text-decoration-color: orange;
     -webkit-text-decoration-color: orange;
 }
 
-#reveal:hover{
-    color:gray;
+.text--reveal:hover {
+    color: gray;
 }
 
-
-#together{
+.text--together {
     cursor: pointer;
     text-decoration: underline;
     text-decoration-color: royalblue;
     -webkit-text-decoration-color: royalblue;
-
 }
 
-#together:hover{
-    color:gray;
+.text--together:hover {
+    color :gray;
 }
 
-#hello a{
-    color:inherit;
+.text--copy a {
+    color: inherit;
     text-decoration: none;
 }
 
 /* ---------- FOOTER ---------- */
-#footer{
-    color:2px solid saddlebrown;
+.footer-container {
+    color: 2px solid saddlebrown;
     display: flex;
     justify-content: center;
-    bottom:0;
+    bottom: 0;
     padding-top: 50px;
-    padding-bottom:2vh;
+    padding-bottom: 2vh;
     animation-delay: .5s;
     animation-duration: 3s;
 }
 
-#icons img{
-   min-height:50px; 
-   max-height:8vh;
+.icons img {
+   min-height: 50px; 
+   max-height: 8vh;
 }
 
 /* ---------- MEDIA QUERIES ---------- */
-
-@media (max-width: 800px){
-    #name-container {
-        padding:6vw;
+@media (max-width: 800px) {
+    .name-container {
+        padding: 6vw;
     }
 
-    #logo{
+    .name__logo {
         justify-content: flex-start;
-        align-items:flex-start;
+        align-items: flex-start;
      } 
 
-    #name h1{
-        font-size:16vw;
+    .name__names {
+        font-size: 16vw;
     }
     
-    #descriptors{
-        font-size:6vw;
-        padding-left:12.3%;
+    .name__descriptors {
+        font-size: 6vw;
+        padding-left: 12.3%;
     } 
 
     /* --------------- TEXT CONTAINER --------------- */
-
-    #text-container{
+    .text-container {
         align-items: center;
-        padding:6vw;
+        padding: 6vw;
     }
 
-    #hello{
-        width:90%;
+    .text__hello {
+        width: 90%;
         font-size: 2em;
     }
 
-    #footer{
-        padding-bottom:15px;
+    .footer__container {
+        padding-bottom: 15px;
     }
-
 }
 
 @media (max-width:430px){
-    .dev {
-        width:200px;
-        margin:15px;
+    .project {
+        width: 200px;
+        margin: 15px;
     }
-    .dev:hover{
-        width:210px;
+
+    .project:hover {
+        width: 210px;
     }
-    .dev span{
+
+    .project span {
         color:white;
-        font-size:90%;
+        font-size: 90%;
         width: 90%;
     }
 
-    .dev:hover span{
+    .project:hover span{
         color:white;
         width: 93%;
-        font-size:92%;
+        font-size: 92%;
     }
 
-    #hover-one:hover{
+    .project-one:hover {
         color:inherit;
     }
     
-    #hover-two:hover{
+    .project-two:hover {
         color:inherit;
     }
     
-    #hover-three:hover{
+    .project-three:hover {
         color:inherit;
     }
 }

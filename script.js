@@ -1,14 +1,14 @@
-const projectsContainer = document.getElementById("projects-container");
-const jeffContainer = document.getElementsByClassName('jeff-container')[0];
-const textContainer = document.getElementById('text-container');
-const reveal = document.getElementById("reveal");
-const jeff = document.getElementById('jeff');
-const cursor = document.getElementById('cursor');
-const dev = document.getElementsByClassName("dev");
+const projectsContainer = document.querySelector('.projects-container');
+const jeffContainer = document.querySelector('.jeff-container');
+const textContainer = document.querySelector('.text-container');
+const reveal = document.querySelector('.text--reveal');
+const jeff = document.querySelector('.text--jeff');
+const cursor = document.querySelector('.name__cursor');
+const project = document.querySelector('.project');
 
 let open = false;
 
-reveal.onclick = function(evt){
+reveal.onclick = function(){
     if(open === false){
         projectsContainer.style.height = "40vh"; 
         textContainer.style.paddingTop = "50px";
@@ -19,30 +19,24 @@ reveal.onclick = function(evt){
     open = !open;
 }
 
-jeff.onclick = function(evt){
-    jeffContainer.classList.remove('horizLeft');
-    jeffContainer.classList.add('horizRight');
+jeff.onclick = function(){
+    jeffContainer.classList.remove('moveLeft');
+    jeffContainer.classList.add('moveRight');
     setTimeout(function(){
-        jeffContainer.classList.add('horizLeft');
-        jeffContainer.classList.remove('horizRight');
+        jeffContainer.classList.add('moveLeft');
+        jeffContainer.classList.remove('moveRight');
     },2000);
 }
 
-const projects = [ "projects-container", "projects", "projectLink", "reveal"]
-
-window.onclick = function(evt){
-    if(open && !projects.includes(evt.srcElement.id)){
+document.onclick = function(e){
+    if( open && 
+        !e.srcElement.classList.contains('projects-container') &&
+        !e.srcElement.classList.contains('projects') &&
+        !e.srcElement.classList.contains('project--link') &&
+        !e.srcElement.classList.contains('text--reveal')
+    ){
         projectsContainer.style.height = "0vh";
         textContainer.style.paddingTop = "0px";
         open = !open;
     }
 }
-
-document.ontouchstart = function(evt){
-    if(open && !projects.includes(evt.srcElement.id)){
-        projectsContainer.style.height = "0vh";
-        textContainer.style.paddingTop = "0px";
-        open = !open;
-    }
-}
-
