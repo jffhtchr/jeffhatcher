@@ -1,8 +1,6 @@
 import { useState } from "react";
 import { DisplayText } from "../../components/display-text/display-text";
 import { TextButton } from "../../components/text-button/text-button";
-import style from "./hello.module.css";
-import classNames from "classnames";
 import { animationDurationMs } from "../../constants";
 import { Fader } from "../../components/fader/fader";
 
