@@ -1,0 +1,51 @@
+.pageWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.buttonWrapper {
+  display: flex;
+  justify-content: center;
+  height: 20px;
+  padding: 20px;
+}
+
+.jeffWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+  height: 300px;
+  width: 300px;
+  position: absolute;
+  left: -300px;
+  background-image: url("../../imgs/jeffFace.png");
+  background-position: left;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.animateJeff {
+  animation: jeffMove 2s ease-in-out forwards;
+}
+
+@keyframes jeffMove {
+  0% {
+    left: -300px;
+  }
+  50% {
+    left: 0;
+  }
+  100% {
+    left: -300px;
+  }
+}
+
+/* // TODO: make this class global */
+.hide {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 1.5s, opacity 1.5s linear;
+}

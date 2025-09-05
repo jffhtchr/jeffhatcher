@@ -1,0 +1,79 @@
+.pageWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.thingsWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.orbitPath {
+  padding: relative;
+  top: 0;
+  left: 0;
+  border-radius: 100%;
+  pointer-events: none;
+}
+
+.orbitPath1 {
+  width: 350px;
+  height: 350px;
+  animation: spin-right 15s linear infinite;
+  -webkit-animation: spin-right 15s linear infinite;
+}
+
+.orbitPath2 {
+  width: 450px;
+  height: 450px;
+  animation: spin-left 20s linear infinite;
+  -webkit-animation: spin-left 20s linear infinite;
+}
+
+.orbitPath3 {
+  width: 550px;
+  height: 550px;
+  animation: spin-left 17s linear infinite;
+  -webkit-animation: spin-left 17s linear infinite;
+}
+
+.orbitPath4 {
+  width: 200px;
+  height: 200px;
+  animation: spin-right 12s linear infinite;
+  -webkit-animation: spin-right 12s linear infinite;
+}
+
+.orbitPath5 {
+  width: 645px;
+  height: 645px;
+  animation: spin-right 12s linear infinite;
+  -webkit-animation: spin-right 12s linear infinite;
+}
+
+@keyframes spin-right {
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin-left {
+  100% {
+    -webkit-transform: rotate(-360deg);
+    -moz-transform: rotate(-360deg);
+    -ms-transform: rotate(-360deg);
+    -o-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+}

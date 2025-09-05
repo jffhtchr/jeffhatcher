@@ -1,0 +1,48 @@
+.button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  color: inherit;
+  font: inherit;
+  text-decoration: underline;
+  cursor: pointer;
+  display: inline;
+  text-decoration-color: white;
+  -webkit-text-decoration-color: white;
+}
+
+.none {
+  text-decoration: none;
+  -webkit-text-decoration: none;
+}
+
+.tomato {
+  text-decoration-color: tomato;
+  -webkit-text-decoration-color: tomato;
+}
+
+.tomato:hover,
+.tomato:focus {
+  color: royalblue;
+}
+
+.green {
+  text-decoration-color: green;
+  -webkit-text-decoration-color: green;
+}
+
+.green:hover,
+.green:focus {
+  color: royalblue;
+}
+
+.blue {
+  text-decoration-color: royalblue;
+  -webkit-text-decoration-color: royalblue;
+}
+
+.blue:hover,
+.blue:focus {
+  color: tomato;
+}

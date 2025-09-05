@@ -1,0 +1,33 @@
+.mainContent {
+  display: flex;
+  padding: 1rem;
+  height: 100%;
+}
+
+.text {
+  display: inline-block;
+  font-size: 24px;
+  color: whitesmoke;
+  font-weight: 400;
+}
+
+.jeff {
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-color: tomato;
+  -webkit-text-decoration-color: tomato;
+}
+
+.things {
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-color: green;
+  -webkit-text-decoration-color: green;
+}
+
+.together {
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-color: royalblue;
+  -webkit-text-decoration-color: royalblue;
+}
