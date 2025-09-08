@@ -5,6 +5,6 @@ export const pages = {
   together: "together",
 } as const;
 
-export const animationDurationMs = 1500;
+export const animationDurationMs = 1300;
 
 export const togetherUrl = "https://github.com/jffhtchr";
