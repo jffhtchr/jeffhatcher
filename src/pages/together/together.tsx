@@ -15,13 +15,13 @@ export function Together({ onNextPage }: TogetherProps) {
         Let's build something <TextLink href={togetherUrl} text="together" />.
       </DisplayText>
       <div className={style.startOver}>
-        <h1>
+        <h2>
           <TextButton
             colorVariant="tomato"
             onClick={onNextPage}
             text="start over"
           />
-        </h1>
+        </h2>
       </div>
     </div>
   );
