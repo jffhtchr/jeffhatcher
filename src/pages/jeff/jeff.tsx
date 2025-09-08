@@ -22,7 +22,7 @@ export function Jeff({ onNextPage }: JeffProps) {
   }
 
   return (
-    <div className={style.pageWrapper}>
+    <>
       <DisplayText>
         My name is{" "}
         <TextButton colorVariant="blue" onClick={handleTextClick} text="Jeff" />
@@ -43,6 +43,6 @@ export function Jeff({ onNextPage }: JeffProps) {
           [style.animateJeff]: shouldShowJeff,
         })}
       />
-    </div>
+    </>
   );
 }

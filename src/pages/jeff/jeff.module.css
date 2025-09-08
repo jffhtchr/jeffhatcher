@@ -1,13 +1,13 @@
-.pageWrapper {
-  display: flex;
-  flex-direction: column;
-}
-
 .buttonWrapper {
   display: flex;
   justify-content: center;
+  align-items: center;
   height: 20px;
   padding: 20px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
 }
 
 .jeffWrapper {
