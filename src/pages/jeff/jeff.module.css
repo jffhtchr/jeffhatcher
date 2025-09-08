@@ -42,10 +42,3 @@
     left: -300px;
   }
 }
-
-/* // TODO: make this class global */
-.hide {
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0s 1.5s, opacity 1.5s linear;
-}
